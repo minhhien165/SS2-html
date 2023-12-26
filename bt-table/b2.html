@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rounded-image {
+            border-radius: 20px; /* Đặt giá trị border-radius để tạo góc tù */
+        }
+    </style>
+    <style>
+        /* Áp dụng màu nền cho khung */
+        .colored-frame {
+          width: 300px;
+          height: 200px;
+          border: 10px solid rgb(181, 237, 245); /* Đường viền khung */
+          background-color: #ffffff; /* Màu nền của khung */
+        }
+      </style>
+       <style>
+        /* Áp dụng màu nền cho hàng có class "highlight" */
+        .highlight {
+          background-color: #ffcc00; /* Màu nền của dòng được tô màu */
+        }
+      </style>
+      <style>
+        /* Áp dụng màu xanh cho các phần tử có class "green-text" */
+        .green-text {
+          color: blue;
+        }
+      </style> 
+</head>
+<body style="padding: 0% 150px;">
+    <table border="1">
+        <caption><h1><i>My Store</i></h1></caption>
+        <thead>
+            <tr>
+                <th>Iteam Photo</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://media1.popsugar-assets.com/files/2014/01/02/666/n/1922195/574f46474ab2683d_shutterstock_498871092VjH1o.jpg.xxxlarge_2x/i/Oranges.jpg" alt="" width="100" height="80" class="rounded-image"></td>
+                <td>Oranges</td>
+                <td>$1 ea.</td>
+            </tr>
+            <tr>
+                <td><img src="https://tse1.mm.bing.net/th?id=OIP.avJXXTM-iOElc8GapOy4wwHaEo&pid=Api&P=0&h=220" alt="" width="100" height="80" class="rounded-image"></td>
+                <td>Bananas</td>
+                <td>$0.75/lb</td>
+            </tr>
+            <tr>
+                <td><img src="https://tse3.mm.bing.net/th?id=OIP.K1vDeyi6_9hGAxhQSqdOkQHaE7&pid=Api&P=0&h=220" alt="" width="100" height="80" class="rounded-image"></td>
+                <td>Pomegranates</td>
+                <td>3 for 5$</td>
+            </tr>
+            <tr>
+                <td><img src="http://upload.wikimedia.org/wikipedia/commons/6/66/Gummy_bears.jpg" alt="" width="100" height="80" class="rounded-image"></td>
+                <td>Gummy Bears</td>
+                <td>$6 per bag</td>
+            </tr>
+            <tr>
+                <td><img src="https://www.wallpics.net/wp-content/uploads/2018/08/Broccoli-Pics.jpg" alt="" width="100" height="80" class="rounded-image"></td>
+                <td>Broccoli</td>
+                <td>$3 a head</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="">
+        <h2>Booking Form</h2>
+        <div>
+            <label for="userName">Name: </label>
+            <input name="userName" id="userName" type="text">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone: </label>
+            <input name="phone" id="phone" type="tel">
+        </div>
+        <br>
+        <div>
+            <label for="date">Date: </label>
+            <input name="date" id="date type="date">
+        </div>
+        <br>
+        <div>
+            <label for="time">Time: </label>
+            <input name="time" id="time" type="time">
+        </div>
+        <br>
+        <div>
+            <label for="nog">Number of guest: </label>
+            <input name="nog" id="nog" type="number">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    <form action="">
+        <h2>Car Pucharse Form</h2>
+        <div>
+            <label for="userName">Name: </label>
+            <input type="text" name="userName" id="userName">
+        </div>
+        <br>
+        <div>
+            <label for="email">Email: </label>
+            <input name="email" id="email" type="email">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <br>
+        <div>
+            <label for="cars">Choose a car: </label>
+            <select name="cars" id="cars">
+                <option value="Model 1">Model 1</option>
+                <option value="Model 2">Model 2</option>
+                <option value="Model 3">Model 3</option>
+                <option value="Model 4">Model 4</option>  
+            </select>                      
+        </div>
+        <br>
+        <div>
+            <label for="colors">Choose a color: </label>
+            <select name="colors" id="colors">
+                <option value="red">Red</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="white">White</option>
+            </select>            
+        </div>
+        <br>
+        <div>
+            <label for="Sl">Quatity: </label>
+            <input type="number" name="Sl" id="Sl">
+        </div>
+        <br>
+        <div>
+            <label for="date">Delivery Date: </label>
+            <input type="date" name="date" id="date">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+    </form>
+    <br><br><br>
+    <form action="" method="get" class="colored-frame">
+        <div>   
+            <h2 class="highlight" >SỞ THÍCH CỦA BẠN</h2>
+        </div>
+        <div>
+            <label for="userName">Họ và tên</label>
+            <input required id="userName" />
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input required type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="">Sở thích</label>
+            <table class="green-text">
+                <tr>
+                    <td><input name="gender" type="checkbox" />Thể thao</td>
+                    <td><input name="gender" type="checkbox" />Âm nhạc</td>
+                    <td><input name="gender" type="checkbox" />Đọc sách</td>
+                </tr>
+                <tr>
+                    <td><input name="gender" type="checkbox" />Lướt web</td>
+                    <td><input name="gender" type="checkbox" />Chơi game</td>
+                    <td><input name="gender" type="checkbox" />Điện ảnh</td>
+                </tr>    
+                <tr>
+                    <td><input name="gender" type="checkbox" />Du lịch</td>
+                </tr>
+            </table>
+            </div>
+            <div>
+                <input type="submit" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </div>            
+    </form>
+</body>
+</html>
